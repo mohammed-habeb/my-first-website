@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Quiz</title>
+  <link rel="stylesheet" type="text/css" href="CSS/quiz.css">
+  <script type="text/javascript" src="javascript/quizJavaScript.js"></script>
+</head>
+
+<body>
+	<div id="navbar">
+		<ul>
+			 <li><a href="index.html">Home</a></li>
+			  <li><a href="HTTP.html">HTTP</a></li>
+			  <li><a href="HTTPs.html">HTTPS</a></li>
+			  <li><a href="BITTORRENT.html">BitTorrent</a></li>
+			  <li><a href="FTP.html">FTP</a></li>
+			  <li><a class="active">Quiz</a></li>
+		</ul>
+	</div>
+	
+	<div id="QUIZ">
+		<h1>Quiz</h1>
+	</div>
+
+	<form method="get"  onsubmit="return test()">
+		<p> 
+			What is the port number used for HTTP?
+		</p>
+		<label>
+			<input type="radio" name="quest1" value="180" onclick="move()" /> 180
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest1" value="120" onclick="move()"/> 120
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest1" value="80" onclick="move()"/> 80
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest1" value="20" onclick="move()"/> 20
+		</label>
+		
+		<p> 
+			Which Client uses HTTP?
+		</p>
+		<label>
+			<input type="radio" name="quest2" value="filezilla" onclick="move2()" /> FileZilla
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest2" value="twitter" onclick="move2()" /> Twitter
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest2" value="time" onclick="move2()" /> Time Magazine
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest2" value="vuze" onclick="move2()"/> Vuze
+		</label>
+		
+		<p> 
+			What is the port number used for HTTPS?
+		</p>
+		<label>
+			<input type="radio" name="quest3" value="423" onclick="move3()" /> 423
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest3" value="433" onclick="move3()"/> 433
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest3" value="443" onclick="move3()"/> 443
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest3" value="453" onclick="move3()"/> 453
+		</label>
+		
+		<p> 
+			Which client uses HTTPS?
+		</p>
+		<label>
+			<input type="radio" name="quest4" value="fortune" onclick="move4()" /> Fortune Magazine
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest4" value="oxford" onclick="move4()"/> University of Oxford
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest4" value="utorrent" onclick="move4()"/> uTorrent
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest4" value="newcastle" onclick="move4()"/> Newcastle University
+		</label>
+		
+		<p> 
+			What is the port number used for BitTorrent?
+		</p>
+		<label>
+			<input type="radio" name="quest5" value="6881" onclick="move5()" /> 6881
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest5" value="6882" onclick="move5()"/> 6882
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest5" value="6880" onclick="move5()"/> 6880
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest5" value="6883" onclick="move5()"/> 6883
+		</label>
+		
+		<p> 
+			What client uses BitTorrent?
+		</p>
+		<label>
+			<input type="radio" name="quest6" value="MIT" onclick="move6()" /> M.I.T
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest6" value="qbittorrent" onclick="move6()"/> qBittorrent
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest6" value="twitter" onclick="move6()"/> Twitter
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest6" value="wikipedia" onclick="move6()"/> Wikipedia
+		</label>
+		
+		<p> 
+			What FTP port number is used for data?
+		</p>
+		<label>
+			<input type="radio" name="quest7" value="20" onclick="move7()" /> 20
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest7" value="21" onclick="move7()"/> 21
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest7" value="22" onclick="move7()"/> 22
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest7" value="23" onclick="move7()"/> 23
+		</label>
+		
+		<p> 
+			What FTP port number is used for command?
+		</p>
+		<label>
+			<input type="radio" name="quest8" value="20" onclick="move8()" /> 20
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest8" value="21" onclick="move8()"/> 21
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest8" value="22" onclick="move8()"/> 22
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest8" value="23" onclick="move8()"/> 23
+		</label>
+		
+		<p> 
+			Which client uses FTP?
+		</p>
+		<label>
+			<input type="radio" name="quest9" value="transmit" onclick="move9()" /> Transmit
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest9" value="vuze" onclick="move9()"/> Vuze
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest9" value="reddit" onclick="move9()"/> Reddit
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest9" value="fortune" onclick="move9()"/> Fortune Magazine
+		</label>
+		
+		<p> 
+			What port is used for transfer in BitTorrent?
+		</p>
+		<label>
+			<input type="radio" name="quest10" value="TCP" onclick="move10()" /> TCP
+		</label>
+		
+		<br />
+		
+		<label>
+			<input type="radio" name="quest10" value="UDP" onclick="move10()"/> UDP
+		</label>
+		
+		<br /> <br />
+		
+		<input type="submit" value="Submit" id="buttons">
+		<input type="reset" id="buttons">
+	</form>
+	
+	<div id="myProgress">
+		<div id="myBar"></div>
+	</div>
+</body>
+
+</html>

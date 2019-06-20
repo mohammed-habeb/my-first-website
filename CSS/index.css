@@ -1,0 +1,157 @@
+/* html {
+	max-width: 1371.5px;
+} */
+
+body {
+	min-width: 872px;
+}
+
+
+/* NAVIGATION BAR */
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0039AC;
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar li a {
+  display: block;
+  color: #C3D6FB;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+#navbar li a:hover {
+  background-color: #2F74FF;
+}
+
+li a.active{
+	background-color: #3A66BD;
+}
+
+
+/* INTERNET PROTOCOLS */
+
+#InternetProtocols {
+	
+	padding-bottom: 200px;
+	text-align: center;
+	padding-top: 150px;
+	background-color: #3A66BD;
+}
+#InternetProtocols h1 {
+	text-transform: uppercase;
+	font-size: 60px;
+	color: #C3D6FB;
+	font-family:  Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* WHAT IS AN INTERNET PROTOCOL? */
+
+#IPDefinitionBox {
+	height: 630px;
+	position: relative;
+	background-color: #EEEEEE;
+}
+
+#IPPictureDiv {
+	/*position: absolute;
+	left: 900px;*/
+	width: 347px;
+	height: 630px;
+	/*border-style: solid;*/
+	background-image: url("../img/InternetProtocol.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	float: right;
+	padding-right:60px;
+}
+
+#IPDefinition {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	position: absolute;	
+	width: 547px;
+	left: 60px;
+/*	height: 100%;
+	left: 60px;
+		border-style: solid;
+*/
+}
+
+#IPDefinition h2 {
+	text-align: left;
+	font-size: 50px;
+}
+
+#IPDefinition p {
+	font-size: 16px;
+}
+
+
+
+/* TYPES OF INTERNET PROTOCOLS */
+
+#IPTypesBox {
+	padding-top: 1px;
+	background-color: #D3D3D3;
+}
+
+#IPTypesBox h2{
+	text-align: center;
+	font-size: 50px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	position: relative;
+}
+
+#IPTypes {
+	margin-left: 0px;
+}
+
+#IPTypes ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#IPTypes li {
+	width: 300px;
+	height: 300px;
+	padding: 0px;
+	margin: 12px;
+	border: solid #3A66BD; 
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	background-color: #3A66BD;
+}
+
+#IPTypes li a {
+  color: #C3D6FB;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 60px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+#IPTypes li a:hover {
+  background-color: #2F74FF;
+}
